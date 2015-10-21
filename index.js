@@ -4,13 +4,15 @@ import ReactDOM from 'react-dom/server';
 class MyComponent extends React.Component {
   render() {
     return (
-      <div>Hello World</div>
+      <div>
+        {this.props.text}
+      </div>
     );
   }
 }
 
 console.log(
-  ReactDom.renderToString(
-    <MyComponent />
+  React.renderToString(
+    <MyComponent text="Hello World"/>
   )
 );

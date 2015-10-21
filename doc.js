@@ -33,7 +33,7 @@ var MyComponent = (function (_React$Component) {
       return _react2['default'].createElement(
         'div',
         null,
-        'Hello World'
+        this.props.text
       );
     }
   }]);
@@ -41,4 +41,4 @@ var MyComponent = (function (_React$Component) {
   return MyComponent;
 })(_react2['default'].Component);
 
-console.log(ReactDom.renderToString(_react2['default'].createElement(MyComponent, null)));
+console.log(_react2['default'].renderToString(_react2['default'].createElement(MyComponent, { text: 'Hello World' })));
