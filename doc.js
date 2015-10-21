@@ -42,3 +42,4 @@ var MyComponent = (function (_React$Component) {
 })(_react2['default'].Component);
 
 console.log(_react2['default'].renderToString(_react2['default'].createElement(MyComponent, { text: 'Hello World' })));
+
